@@ -128,7 +128,7 @@ function getFood(food) {
    return snack;
 }
 
-getFood(false); // devuelve Meow Mix, ya que en la condicion de enviar Friskies, es si food es true, pero como el parametro food es false se envia la variable global snack.
+getFood(false); // devuelve undefined por que cuando hace la lista de la funcion reconoce que hay un snack dentro del bloque if y por lo tanto suscribe dentro de la funcion la variable snack y le da un valor undefined, hasta que entre al bloque del if.
 ```
 
 ### This
